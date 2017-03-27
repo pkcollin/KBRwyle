@@ -1,0 +1,11 @@
+ public static void main(String[] args){
+		  int n = Integer.parseInt(args[0]);
+		  for(int i = 1 ; i <= n; i++){
+			  char[] dots = new char[n-i];
+			  char[] numb = new char[i];
+			  String dotz = new String(dots).replace("\0", ".");
+			  String numbz = new String(numb).replace("\0", Integer.toString(i));
+			  System.out.println(dotz+numbz);
+		  }
+
+	  }
